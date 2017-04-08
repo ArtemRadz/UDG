@@ -46,19 +46,23 @@ table {
 /*Add custom fonts*/
 @font-face {
     font-family: "Roboto-Light";
-    src: url(../fonts/Roboto-Light.ttf);
+    src: url(../fonts/Roboto-Light.ttf),
+		url(../fonts/Roboto-Light.eot);
 }
 @font-face {
     font-family: "Roboto-Bold";
-    src: url(../fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Bold.ttf),
+		url(../fonts/Roboto-Bold.eot);
 }
 @font-face {
     font-family: "Acrom-Light";
-    src: url(../fonts/Acrom-Light.otf);
+    src: url(../fonts/Acrom-Light.otf),
+    	url(../fonts/Acrom-Light.eot);
 }
 @font-face {
     font-family: "Acrom-ExtraBold";
-    src: url(../fonts/Acrom-ExtraBold.otf);
+    src: url(../fonts/Acrom-ExtraBold.otf),
+    	url(../fonts/Acrom-ExtraBold.eot);
 }
 
 /*Main style*/
@@ -548,6 +552,9 @@ main.wrapper {
 	cursor: pointer;
 	position: relative;
 	display: flex;
+	-ms-transform: scale(1,1);
+	-ms-transition-timing-function: ease-out;
+    -ms-transition-duration: 500ms;
 	-webkit-transform: scale(1,1);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 500ms;
@@ -556,7 +563,8 @@ main.wrapper {
     -moz-transition-duration: 500ms;
 }
 .img-container:hover {
-	box-shadow: 0px 0px 37px rgba(2,3,3,0.5);;
+	box-shadow: 0px 0px 37px rgba(2,3,3,0.5);
+	-ms-transform: scale(1.045,1.045);
 	-webkit-transform: scale(1.045,1.045);
     -moz-transform: scale(1.045,1.045);
 }
@@ -730,6 +738,9 @@ main.wrapper {
 .news-blocks-div {
 	outline: none;
 	max-width: 352px;
+	-ms-transform: scale(1,1);
+    -ms-transition-timing-function: ease-out;
+    -ms-transition-duration: 500ms;
 	-webkit-transform: scale(1,1);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 500ms;
@@ -738,6 +749,7 @@ main.wrapper {
     -moz-transition-duration: 500ms;
 }
 .news-blocks-div:hover {
+	-ms-transform: scale(1.045,1.045);
 	-webkit-transform: scale(1.045,1.045);
     -moz-transform: scale(1.045,1.045);
 }
